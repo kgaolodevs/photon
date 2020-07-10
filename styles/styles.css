@@ -60,6 +60,13 @@
   border-bottom-right-radius: 0.8rem;
 }
 
+.app__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
 .gallery-info {
   display: -webkit-box;
   display: -ms-flexbox;
