@@ -47,3 +47,15 @@
     }
   }
 }
+
+// Injected styles
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #201f27;
+  a {
+    color: #201f27;
+    text-decoration: none;
+  }
+}

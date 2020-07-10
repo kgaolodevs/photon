@@ -24,8 +24,11 @@ const actions = {
       const galleryImage = document.createElement("div");
       galleryImage.classList.add("gallery-image");
       galleryImage.innerHTML = `
-      <img src=${photo.src.large}> 
-      <p>${photo.photographer}</p>
+      <div class="gallery-info">
+        <p>${photo.photographer}</p>
+        <a href=${photo.src.original} target="_blank">Download</a>
+      </div> 
+      <img src=${photo.src.large}>
       `;
       app.gallery.appendChild(galleryImage);
     });

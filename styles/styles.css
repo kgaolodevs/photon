@@ -59,4 +59,22 @@
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
 }
+
+.gallery-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #201f27;
+}
+
+.gallery-info a {
+  color: #201f27;
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */
