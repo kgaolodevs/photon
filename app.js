@@ -39,6 +39,7 @@ const actions = {
   },
 
   searchPhotos: async function (query) {
+    this.clear();
     const data = await actions.fetchApi(
       `https://api.pexels.com/v1/search?query=${query}&per_page=15`
     );
@@ -47,6 +48,11 @@ const actions = {
 
   updateInput: function (e) {
     app.searchValue = e.target.value;
+  },
+
+  clear: function () {
+    app.gallery.innerHTML = "";
+    app.input.value = "";
   },
 };
 
