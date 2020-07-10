@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  header {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      padding: 2rem;
+    }
+
+    #app__logo {
+      text-decoration: none;
+      color: #25242a;
+    }
+  }
+
+  &__searchForm {
+    padding: 2rem;
+    display: flex;
+    &--search {
+      font-size: 2rem;
+      padding: 0.5rem;
+      width: 100%;
+      border: 2px solid #1c114e;
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+    }
+    &--submitButton {
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      background: #1c114e;
+      color: white;
+      padding: 0 3rem;
+      cursor: pointer;
+      border-top-right-radius: 0.8rem;
+      border-bottom-right-radius: 0.8rem;
+    }
+  }
+}
