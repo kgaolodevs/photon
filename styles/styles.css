@@ -65,6 +65,40 @@
   display: grid;
   -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 5rem;
+  margin: 3rem;
+}
+
+.app__gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app__nav {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__nav .app__navButton {
+  padding: 1rem 3rem;
+  background: #1c114e;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .gallery-info {
@@ -78,10 +112,15 @@
       -ms-flex-align: center;
           align-items: center;
   color: #201f27;
+  border-top: #1c114e solid 2px;
+  border-left: #1c114e solid 2px;
+  padding-left: 1rem;
 }
 
 .gallery-info a {
-  color: #201f27;
+  color: white;
   text-decoration: none;
+  background: #1c114e;
+  padding: 0.5rem 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
